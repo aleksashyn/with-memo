@@ -13,18 +13,3 @@ jobs:
         - yarn test
       after_success:
         - bash <(curl -s https://codecov.io/bash)
-    - stage: npm release
-      if: tag =~ /^v[0-9]*\.[0-9]*\.[0-9]*$/
-      script:
-        - yarn build
-      before_deploy:
-        - cd dist
-      deploy:
-        provider: npm
-        email: $NPM_EMAIL
-        api_key: $NPM_TOKEN
-        api_token: $NPM_TOKEN
-        skip_cleanup: true
-        on:
-          tags: true
-          branch: master
