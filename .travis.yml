@@ -14,7 +14,7 @@ jobs:
       after_success:
         - bash <(curl -s https://codecov.io/bash)
     - stage: npm release
-      if: branch = master AND commit_message =~ /^v[0-9]*\.[0-9]*\.[0-9]*$/
+      if: tag =~ /^v[0-9]*\.[0-9]*\.[0-9]*$/
       script:
         - yarn build
       before_deploy:
@@ -24,3 +24,6 @@ jobs:
         email: "$NPM_EMAIL"
         api_key: "$NPM_TOKEN"
         skip_cleanup: true
+        on:
+          tags: true
+          branch: master
