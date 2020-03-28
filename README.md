@@ -1,5 +1,10 @@
 # React withMemo
 
+[![Build Status](https://travis-ci.org/aleksashyn/with-memo.svg?branch=master)](https://travis-ci.org/aleksashyn/with-memo)
+[![codecov](https://codecov.io/gh/aleksashyn/with-memo/branch/master/graph/badge.svg)](https://codecov.io/gh/aleksashyn/with-memo)
+![npm](https://img.shields.io/npm/v/with-memo)
+![NPM](https://img.shields.io/npm/l/with-memo)
+
 HOC wrapper around [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) with in-depth property comparison.
 
 ## Install
