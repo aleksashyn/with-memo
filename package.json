@@ -1,6 +1,6 @@
 {
   "name": "with-memo",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "HOC for React.memo with in-depth property comparison",
   "author": "Vasyl Aleksashyn <vasyl.aleksashyn@gmail.com>",
   "homepage": "https://github.com/aleksashyn/with-memo",
@@ -11,7 +11,12 @@
   "bugs": {
     "url": "https://github.com/aleksashyn/with-memo/issues"
   },
-  "keywords": ["React", "memo", "deepEqual", "withMemo"],
+  "keywords": [
+    "React",
+    "memo",
+    "deepEqual",
+    "withMemo"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
