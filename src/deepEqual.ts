@@ -12,9 +12,8 @@ function getCircularReplacer(): (key: string, value: any) => any | undefined {
 }
 
 function deepEqual(prevProps: any, nextProps: any): boolean {
-    const circularReplacer = getCircularReplacer();
-    const stringifyLeft = JSON.stringify(prevProps, circularReplacer);
-    const stringifyRight = JSON.stringify(nextProps, circularReplacer);
+    const stringifyLeft = JSON.stringify(prevProps, getCircularReplacer());
+    const stringifyRight = JSON.stringify(nextProps, getCircularReplacer());
     return stringifyLeft === stringifyRight;
 }
 

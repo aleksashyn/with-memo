@@ -1,6 +1,6 @@
 {
   "name": "with-memo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HOC for React.memo with in-depth property comparison",
   "author": "Vasyl Aleksashyn <vasyl.aleksashyn@gmail.com>",
   "homepage": "https://github.com/aleksashyn/with-memo",
