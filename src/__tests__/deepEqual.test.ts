@@ -17,10 +17,6 @@ describe("DeepEqual Function", () => {
         expect(deepEqual(null, null)).toBeTruthy();
     });
 
-    test("should return false for different types with the same values", () => {
-        expect(deepEqual(1, "1")).not.toBeTruthy();
-    });
-
     test("should return true for the same objects with circular structure", () => {
         const prevProps = { key: "test", cir: {} };
         prevProps.cir = prevProps;
